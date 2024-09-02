@@ -142,6 +142,8 @@ func (c NumericColumnOf[T]) ConvertAssign(idx int, v reflect.Value) error {
 
 func (c BoolColumn) ConvertAssign(idx int, v reflect.Value) error {
 	switch v.Kind() {
+	case reflect.Ptr:
+		v.Set(reflect.ValueOf(&c.Column[idx]))
 	case reflect.Bool:
 		v.SetBool(c.Column[idx])
 	default:
