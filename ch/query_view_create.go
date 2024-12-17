@@ -14,6 +14,7 @@ type CreateViewQuery struct {
 	materialized bool
 	ifNotExists  bool
 	view         chschema.QueryWithArgs
+	engine       chschema.QueryWithArgs
 	onCluster    chschema.QueryWithArgs
 	to           chschema.QueryWithArgs
 	where        whereQuery
@@ -62,6 +63,7 @@ func (q *CreateViewQuery) OnClusterExpr(query string, args ...any) *CreateViewQu
 	return q
 }
 
+// will disable engine option
 func (q *CreateViewQuery) To(to string) *CreateViewQuery {
 	q.to = chschema.UnsafeName(to)
 	return q
@@ -81,6 +83,11 @@ func (q *CreateViewQuery) Table(tables ...string) *CreateViewQuery {
 
 func (q *CreateViewQuery) TableExpr(query string, args ...any) *CreateViewQuery {
 	q.addTable(chschema.SafeQuery(query, args))
+	return q
+}
+
+func (q *CreateViewQuery) Engine(query string, args ...any) *CreateViewQuery {
+	q.engine = chschema.SafeQuery(query, args)
 	return q
 }
 
@@ -205,11 +212,24 @@ func (q *CreateViewQuery) AppendQuery(fmter chschema.Formatter, b []byte) (_ []b
 		}
 	}
 
-	b = append(b, " TO "...)
-	b, err = q.to.AppendQuery(fmter, b)
-	if err != nil {
-		return nil, err
+	if !q.to.IsEmpty() {
+		b = append(b, " TO "...)
+		b, err = q.to.AppendQuery(fmter, b)
+		if err != nil {
+			return nil, err
+		}
 	}
+
+	// clickhouse do not support both to and engine
+	if !q.engine.IsEmpty() && q.to.IsEmpty() {
+		b = append(b, " Engine = "...)
+
+		b, err = q.engine.AppendQuery(fmter, b)
+		if err != nil {
+			return nil, err
+		}
+	}
+
 	b = append(b, " AS "...)
 
 	b = append(b, "SELECT "...)

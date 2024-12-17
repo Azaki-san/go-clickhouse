@@ -134,6 +134,35 @@ func TestQuery(t *testing.T) {
 				OnCluster("my-cluster").
 				IfNotExists()
 		},
+		func(db *ch.DB) chschema.QueryAppender {
+			return db.NewCreateView().
+				Materialized().
+				Engine("MergeTree").
+				IfNotExists().
+				View("view_name").
+				Column("col1").
+				ColumnExpr("col1 AS alias").
+				TableExpr("src_table AS alias").
+				Where("foo = bar").
+				Group("group1").
+				GroupExpr("group2, group3").
+				OrderExpr("order2, order3")
+		},
+		func(db *ch.DB) chschema.QueryAppender {
+			return db.NewCreateView().
+				Materialized().
+				Engine("MergeTree").
+				To("dest_table"). // expect override engine
+				IfNotExists().
+				View("view_name").
+				Column("col1").
+				ColumnExpr("col1 AS alias").
+				TableExpr("src_table AS alias").
+				Where("foo = bar").
+				Group("group1").
+				GroupExpr("group2, group3").
+				OrderExpr("order2, order3")
+		},
 	}
 
 	db := chDB()
@@ -145,7 +174,6 @@ func TestQuery(t *testing.T) {
 	for i, fn := range queries {
 		t.Run(fmt.Sprintf("%d", i), func(t *testing.T) {
 			q := fn(db)
-
 			query, err := q.AppendQuery(db.Formatter(), nil)
 			if err != nil {
 				snapshot.SnapshotT(t, err.Error())
