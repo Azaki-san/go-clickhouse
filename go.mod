@@ -2,7 +2,8 @@ module github.com/Azaki-san/go-clickhouse
 
 go 1.24
 
-replace github.com/Azaki-san/go-clickhouse/chdebug => ./chdebug
+replace github.com/uptrace/go-clickhouse => github.com/Azaki-san/go-clickhouse v1.5.2
+replace github.com/uptrace/go-clickhouse/chdebug => github.com/Azaki-san/go-clickhouse/chdebug v1.5.2
 
 require (
 	github.com/Azaki-san/go-clickhouse/chdebug v1.5.2

@@ -1,5 +1,5 @@
-github.com/Azaki-san/lz4 v1.1.1 h1:njyoAWq7gj73vLgk4a7AZe4f0dsnghloIRFBcFr7cdw=
-github.com/Azaki-san/lz4 v1.1.1/go.mod h1:lVDJ+iv08Xcoses0Iu1F6gS9/ulo3n1RRx6BU5de5GU=
+github.com/Azaki-san/go-clickhouse v1.5.2 h1:nQpdPeR+a65wCDMCDVlWJPHYzD3P6/KELGCSaVhUiYE=
+github.com/Azaki-san/go-clickhouse v1.5.2/go.mod h1:OVG44DoAUcd0Ac2aswjWFTCNDZ5p/4oe82XJIrzmK+I=
 github.com/bradleyjkemp/cupaloy v2.3.0+incompatible h1:UafIjBvWQmS9i/xRg+CamMrnLTKNzo+bdmT/oH34c2Y=
 github.com/bradleyjkemp/cupaloy v2.3.0+incompatible/go.mod h1:Au1Xw1sgaJ5iSFktEhYsS0dbQiS1B0/XMXl+42y9Ilk=
 github.com/codemodus/kace v0.5.1 h1:4OCsBlE2c/rSJo375ggfnucv9eRzge/U5LrrOZd47HA=
@@ -16,10 +16,16 @@ github.com/mattn/go-colorable v0.1.14 h1:9A9LHSqF/7dyVVX6g0U9cwm9pG3kP9gSzcuIPHP
 github.com/mattn/go-colorable v0.1.14/go.mod h1:6LmQG8QLFO4G5z1gPvYEzlUgJ2wF+stgPZH1UqBm1s8=
 github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
 github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
+github.com/pierrec/lz4/v4 v4.1.17 h1:kV4Ip+/hUBC+8T6+2EgburRtkE9ef4nbY3f4dFhGjMc=
+github.com/pierrec/lz4/v4 v4.1.17/go.mod h1:gZWDp/Ze/IJXGXf23ltt2EXimqmTUXEy0GFuRQyBid4=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOfJA=
 github.com/stretchr/testify v1.10.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
+github.com/uptrace/go-clickhouse v0.3.1 h1:5wIoHZ0vCqX48gPgNHBIgW4089TkNZZOd+6Bso3thno=
+github.com/uptrace/go-clickhouse v0.3.1/go.mod h1:ZkFYp+b3tn7YiHR6yMnHqGetPfFZhbVYVTsTGBIbdCY=
+github.com/uptrace/go-clickhouse/chdebug v0.3.1 h1:eAMrKXmF3MQ2ggdvRb+JZ3wELwLWaE4kTudxNLppgRc=
+github.com/uptrace/go-clickhouse/chdebug v0.3.1/go.mod h1:g1TT4y+3ooH/15oJyiE0TiQrWWowtTLEgEtV9P0/PvE=
 go.opentelemetry.io/otel v1.34.0 h1:zRLXxLCgL1WyKsPVrgbSdMN4c0FMkDAskSTQP+0hdUY=
 go.opentelemetry.io/otel v1.34.0/go.mod h1:OWFPOQ+h4G8xpyjgqo4SxJYdDQ/qmRH+wivy7zzx9oI=
 go.opentelemetry.io/otel/trace v1.34.0 h1:+ouXS2V8Rd4hp4580a8q23bg0azF2nI8cqLYnC8mh/k=
