@@ -1,4 +1,4 @@
-module github.com/uptrace/go-clickhouse
+module github.com/Azaki-san/go-clickhouse
 
 go 1.24
 
