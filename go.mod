@@ -5,7 +5,7 @@ go 1.24
 replace github.com/Azaki-san/go-clickhouse/chdebug => ./chdebug
 
 require (
-	github.com/Azaki-san/go-clickhouse/chdebug v1.5.2
+	github.com/Azaki-san/go-clickhouse/chdebug v1.5.3
 	github.com/Azaki-san/lz4 v1.1.1
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
 	github.com/codemodus/kace v0.5.1

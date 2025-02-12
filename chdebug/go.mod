@@ -6,10 +6,10 @@ toolchain go1.24.0
 
 replace github.com/Azaki-san/go-clickhouse => ./..
 
-replace github.com/uptrace/go-clickhouse => github.com/Azaki-san/go-clickhouse v1.5.2
+replace github.com/uptrace/go-clickhouse => github.com/Azaki-san/go-clickhouse v1.5.3
 
 require (
-	github.com/Azaki-san/go-clickhouse v1.5.2
+	github.com/Azaki-san/go-clickhouse v1.5.3
 	github.com/fatih/color v1.18.0
 )
 
