@@ -1,5 +1,3 @@
-github.com/Azaki-san/go-clickhouse/chdebug v1.5.2 h1:mmlvjNVicxOMTZGfCLdiLnppoGJohlPQWkSP6+/6RWU=
-github.com/Azaki-san/go-clickhouse/chdebug v1.5.2/go.mod h1:0rrEt8zjjIlv0prLU+xqaU8NfRlETKrN+Gx/Sw45Ays=
 github.com/Azaki-san/lz4 v1.1.1 h1:njyoAWq7gj73vLgk4a7AZe4f0dsnghloIRFBcFr7cdw=
 github.com/Azaki-san/lz4 v1.1.1/go.mod h1:lVDJ+iv08Xcoses0Iu1F6gS9/ulo3n1RRx6BU5de5GU=
 github.com/bradleyjkemp/cupaloy v2.3.0+incompatible h1:UafIjBvWQmS9i/xRg+CamMrnLTKNzo+bdmT/oH34c2Y=

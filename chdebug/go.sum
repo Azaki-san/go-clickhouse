@@ -1,5 +1,3 @@
-github.com/Azaki-san/go-clickhouse v1.5.2 h1:nQpdPeR+a65wCDMCDVlWJPHYzD3P6/KELGCSaVhUiYE=
-github.com/Azaki-san/go-clickhouse v1.5.2/go.mod h1:OVG44DoAUcd0Ac2aswjWFTCNDZ5p/4oe82XJIrzmK+I=
 github.com/Azaki-san/lz4 v1.1.1 h1:njyoAWq7gj73vLgk4a7AZe4f0dsnghloIRFBcFr7cdw=
 github.com/Azaki-san/lz4 v1.1.1/go.mod h1:lVDJ+iv08Xcoses0Iu1F6gS9/ulo3n1RRx6BU5de5GU=
 github.com/bradleyjkemp/cupaloy v2.3.0+incompatible h1:UafIjBvWQmS9i/xRg+CamMrnLTKNzo+bdmT/oH34c2Y=
@@ -22,8 +20,6 @@ github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZb
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/testify v1.10.0 h1:Xv5erBjTwe/5IxqUQTdXv5kgmIvbHo3QQyRwhJsOfJA=
 github.com/stretchr/testify v1.10.0/go.mod h1:r2ic/lqez/lEtzL7wO/rwa5dbSLXVDPFyf8C91i36aY=
-github.com/uptrace/go-clickhouse/chdebug v0.3.1 h1:eAMrKXmF3MQ2ggdvRb+JZ3wELwLWaE4kTudxNLppgRc=
-github.com/uptrace/go-clickhouse/chdebug v0.3.1/go.mod h1:g1TT4y+3ooH/15oJyiE0TiQrWWowtTLEgEtV9P0/PvE=
 go.opentelemetry.io/otel v1.34.0 h1:zRLXxLCgL1WyKsPVrgbSdMN4c0FMkDAskSTQP+0hdUY=
 go.opentelemetry.io/otel v1.34.0/go.mod h1:OWFPOQ+h4G8xpyjgqo4SxJYdDQ/qmRH+wivy7zzx9oI=
 go.opentelemetry.io/otel/trace v1.34.0 h1:+ouXS2V8Rd4hp4580a8q23bg0azF2nI8cqLYnC8mh/k=
