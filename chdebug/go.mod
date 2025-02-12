@@ -4,9 +4,7 @@ go 1.24
 
 toolchain go1.24.0
 
-replace github.com/Azaki-san/go-clickhouse => ./..
-
-replace github.com/uptrace/go-clickhouse => github.com/Azaki-san/go-clickhouse v1.5.3
+replace github.com/uptrace/go-clickhouse => ./..
 
 require (
 	github.com/Azaki-san/go-clickhouse v1.5.3

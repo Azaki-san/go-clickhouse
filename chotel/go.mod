@@ -8,10 +8,6 @@ replace github.com/Azaki-san/go-clickhouse => ./..
 
 replace github.com/Azaki-san/go-clickhouse/chdebug => ../chdebug
 
-replace github.com/uptrace/go-clickhouse => github.com/Azaki-san/go-clickhouse v1.5.3
-
-replace github.com/uptrace/go-clickhouse/chdebug => github.com/Azaki-san/go-clickhouse/chdebug v1.5.3
-
 exclude go.opentelemetry.io/proto/otlp v0.15.0
 
 require (
