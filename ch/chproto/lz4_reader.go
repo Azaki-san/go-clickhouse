@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/pierrec/lz4/v4"
+	"github.com/Azaki-san/lz4"
 )
 
 var errUnreadData = errors.New("ch: lz4 reader was closed with unread data")

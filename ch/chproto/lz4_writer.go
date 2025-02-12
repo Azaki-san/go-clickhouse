@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"encoding/binary"
 
-	"github.com/pierrec/lz4/v4"
+	"github.com/Azaki-san/lz4"
 
 	"github.com/uptrace/go-clickhouse/ch/internal"
 	"github.com/uptrace/go-clickhouse/ch/internal/cityhash102"
