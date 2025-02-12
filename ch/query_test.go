@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/Azaki-san/go-clickhouse/ch"
+	"github.com/Azaki-san/go-clickhouse/ch/chschema"
 	"github.com/bradleyjkemp/cupaloy"
-	"github.com/uptrace/go-clickhouse/ch"
-	"github.com/uptrace/go-clickhouse/ch/chschema"
 )
 
 func TestQuery(t *testing.T) {

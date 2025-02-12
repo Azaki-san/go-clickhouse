@@ -4,11 +4,11 @@ go 1.24
 
 toolchain go1.24.0
 
-replace github.com/uptrace/go-clickhouse => ./..
+replace github.com/Azaki-san/go-clickhouse => ./..
 
 require (
+	github.com/Azaki-san/go-clickhouse v1.5.2
 	github.com/fatih/color v1.18.0
-	github.com/uptrace/go-clickhouse v0.0.0-00010101000000-000000000000
 )
 
 require (

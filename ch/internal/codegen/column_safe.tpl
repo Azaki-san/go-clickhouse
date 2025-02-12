@@ -3,7 +3,7 @@
 package chschema
 
 import (
-	"github.com/uptrace/go-clickhouse/ch/chproto"
+	"github.com/Azaki-san/go-clickhouse/ch/chproto"
 )
 
 {{- range . }}

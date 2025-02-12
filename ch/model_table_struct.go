@@ -4,7 +4,7 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/uptrace/go-clickhouse/ch/chschema"
+	"github.com/Azaki-san/go-clickhouse/ch/chschema"
 )
 
 type structTableModel struct {

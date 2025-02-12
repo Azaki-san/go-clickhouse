@@ -4,8 +4,8 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/uptrace/go-clickhouse/ch/chschema"
-	"github.com/uptrace/go-clickhouse/ch/internal"
+	"github.com/Azaki-san/go-clickhouse/ch/chschema"
+	"github.com/Azaki-san/go-clickhouse/ch/internal"
 )
 
 type CreateTableQuery struct {

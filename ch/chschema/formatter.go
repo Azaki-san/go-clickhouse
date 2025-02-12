@@ -5,8 +5,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/uptrace/go-clickhouse/ch/internal"
-	"github.com/uptrace/go-clickhouse/ch/internal/parser"
+	"github.com/Azaki-san/go-clickhouse/ch/internal"
+	"github.com/Azaki-san/go-clickhouse/ch/internal/parser"
 )
 
 var emptyFmter Formatter

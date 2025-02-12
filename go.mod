@@ -2,15 +2,15 @@ module github.com/Azaki-san/go-clickhouse
 
 go 1.24
 
-replace github.com/uptrace/go-clickhouse/chdebug => ./chdebug
+replace github.com/Azaki-san/go-clickhouse/chdebug => ./chdebug
 
 require (
+	github.com/Azaki-san/go-clickhouse/chdebug v0.0.0-00010101000000-000000000000
 	github.com/Azaki-san/lz4 v1.1.1
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
 	github.com/codemodus/kace v0.5.1
 	github.com/jinzhu/inflection v1.0.0
 	github.com/stretchr/testify v1.10.0
-	github.com/uptrace/go-clickhouse/chdebug v0.3.1
 	go.opentelemetry.io/otel/trace v1.34.0
 	golang.org/x/exp v0.0.0-20250210185358-939b2ce775ac
 )
